@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">إدارة عملية التوزيع</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login_button">دخول</string>
+    <string name="demo_users_info">للاختبار: admin/admin أو manager/manager أو dataentry/dataentry</string>
+
+    <!-- Manager Dashboard -->
+    <string name="manager_dashboard">لوحة تحكم المدير</string>
+    <string name="pending_approvals">الطلبات المعلقة للموافقة</string>
+    <string name="approve">وافق</string>
+    <string name="approve_request">وافق على الطلب</string>
+    <string name="confirm_approval">هل تريد الموافقة على هذا الطلب؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="no_pending_requests">لا توجد طلبات معلقة</string>
+
+    <!-- Data Entry Dashboard -->
+    <string name="data_entry_dashboard">لوحة تحكم مدخل البيانات</string>
+    <string name="enter_aid_items">إدخال أصناف المساعدات</string>
+    <string name="add_item">إضافة صنف</string>
+    <string name="category_id">معرف الصنف</string>
+    <string name="quantity">الكمية</string>
+    <string name="unit">الوحدة</string>
+    <string name="added_items">الأصناف المضافة</string>
+    <string name="items_count">عدد الأصناف: %d</string>
+    <string name="please_add_items">يرجى إضافة أصناف قبل الموافقة</string>
+
+    <!-- Distribution Manager Dashboard -->
+    <string name="distribution_manager_dashboard">لوحة تحكم مسئول التوزيع</string>
+    <string name="ready_for_distribution">طلبات جاهزة للتوزيع</string>
+    <string name="start_distribution">ابدأ التوزيع</string>
+    <string name="complete_distribution">أكمل التوزيع</string>
+    <string name="distribution_details">تفاصيل التوزيع</string>
+    <string name="items_to_distribute">الأصناف المراد توزيعها</string>
+    <string name="distribution_started">تم بدء عملية التوزيع بنجاح</string>
+    <string name="distribution_completed">تم إكمال عملية التوزيع بنجاح</string>
+
+    <!-- Common -->
+    <string name="back">رجوع</string>
+    <string name="sync">مزامنة</string>
+    <string name="syncing">جاري المزامنة...</string>
+    <string name="sync_success">تم المزامنة بنجاح</string>
+    <string name="sync_error">خطأ في المزامنة</string>
+    <string name="error">خطأ</string>
+    <string name="success">نجح</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="camp">المخيم</string>
+    <string name="warehouse">المستودع</string>
+    <string name="created_at">تم الإنشاء في</string>
+    <string name="status">الحالة</string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="approved">موافق عليه</string>
+    <string name="completed">مكتمل</string>
+</resources>

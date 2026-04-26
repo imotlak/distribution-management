@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.distributionmanagement">
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Storage Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Camera for optional future features -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DistributionManagement"
+        android:usesCleartextTraffic="false">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".presentation.ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DistributionManagement">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".presentation.ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/login"
+            android:screenOrientation="portrait" />
+
+        <!-- Manager Dashboard Activity -->
+        <activity
+            android:name=".presentation.ui.manager.ManagerDashboardActivity"
+            android:exported="false"
+            android:label="@string/manager_dashboard"
+            android:screenOrientation="portrait" />
+
+        <!-- Data Entry Dashboard Activity -->
+        <activity
+            android:name=".presentation.ui.dataentry.DataEntryDashboardActivity"
+            android:exported="false"
+            android:label="@string/data_entry_dashboard"
+            android:screenOrientation="portrait" />
+
+        <!-- Distribution Manager Dashboard Activity -->
+        <activity
+            android:name=".presentation.ui.distribution.DistributionManagerActivity"
+            android:exported="false"
+            android:label="@string/distribution_manager_dashboard"
+            android:screenOrientation="portrait" />
+
+        <!-- Sync Service -->
+        <service
+            android:name=".data.remote.sheets.SyncService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
